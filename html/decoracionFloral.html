@@ -8,6 +8,19 @@
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.checkbtn').click(function() {
+                $('.nav-links').toggleClass('show');
+                /*$('.checkbtn').css("color", "white");*/
+
+            }
+            
+            )
+        })
+    </script>
     <title>Jazmin</title>
 </head>
 
@@ -34,21 +47,16 @@
     <header>
     
         <div class="titulo">
-            <div class="contenido-img">
-            
-                
-            </div>
-            <div class="contenido-seccion">
-                <h1>Decoración Floral</h1> 
-            </div>
-            
+           
+            <h1>Decoración Floral</h1> 
             
         </div>
     
     </header>
-
+     
+    
     <main>
-        <section>
+        <section class="filter">
             <form action="#">
                 <label for="filtro">Filtro:  </label>
                 <select name="categorias">
@@ -59,10 +67,11 @@
                     <option value="evento">Evento</option>
                 </select>
             </form>
-
+    
         </section>
         
-        <section>
+        
+        <section class="lista_decoraciones">
 
             <div class="contenido-seccion">
                 
@@ -149,18 +158,17 @@
         </ul>
     </nav>
 
-    <footer>
-        <div>
-
+    <footer class="pie">
+        <div id="contacto">
+            <h3>Contacto</h3>
             <ul>
-                <li>Contacto</li>
                 <li>Dirección: 831 Elm St, New York</li>
                 <li>Telefono: 666-888-999</li>
                 <li>E-mail: florjazmin@gmail.com</li>
             </ul>
         </div>
 
-        <div>
+        <div id="redes">
             <h1>JAZMIN</h1>
             <ul>
                 <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
@@ -169,13 +177,11 @@
             </ul>
 
             <p>Copyright &copy; 2022</p>
-            
-            
-            
+              
         </div>
-        <div>
+        <div id="informacion">
+            <h3>Informacion</h3>
             <ul>
-                <li>Informacion</li>
                 <li><a href="#">Sobre nosotros</a></li>
                 <li><a href="#">Aviso ligal</a></li>
                 <li><a href="#">Política de cookies</a></li>
