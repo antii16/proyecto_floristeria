@@ -1,18 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
- 
+
 
 }
 
-html, body {
+html,
+body {
   width: 100%;
   overflow-x: hidden;
- 
+
 }
 
 
@@ -25,43 +26,43 @@ html, body {
 }
 
 header {
-    height: 100vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/fondo_header.jpg); 
-    background-position: bottom;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-  
-
-  }
-
-  .header-contenido {
-    color:rgb(255, 255, 255);
-    text-align: center;
-    width: 50%;
-    margin-bottom: 50px;
-  }
-
-  .header-contenido p {
-    font-size: 3vmin;
-    padding: 20px;
-    line-height: 30px;
-    color: #fff;
-    letter-spacing: 1px;
-    }
-
-  .header-contenido h1 {
-    font-size: 5vmin;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    word-spacing: 0.25em;
-    padding: 10px;
-  }
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/fondo_header.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
 
 
-  /* MENÚ DE NAVEGACIÓN*/
+}
+
+.header-contenido {
+  color: rgb(255, 255, 255);
+  text-align: center;
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.header-contenido p {
+  font-size: 3vmin;
+  padding: 20px;
+  line-height: 30px;
+  color: #fff;
+  letter-spacing: 1px;
+}
+
+.header-contenido h1 {
+  font-size: 5vmin;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  word-spacing: 0.25em;
+  padding: 10px;
+}
+
+
+/* MENÚ DE NAVEGACIÓN*/
 
 ul {
   list-style: none;
@@ -75,25 +76,25 @@ ul {
   width: 100%;
   padding: 20px;
   justify-content: space-between;
- 
+
 }
 
 .logo img {
   width: 20vmin;
 }
 
-.nav-links  {
+.nav-links {
   display: flex;
   align-items: center;
- 
+
 }
 
-.nav-links  li {
- margin: 0 30px;
+.nav-links li {
+  margin: 0 30px;
   padding: 5px;
 }
 
-.nav-links  a {
+.nav-links a {
   padding: 20px;
   color: #fff;
   text-decoration: none;
@@ -103,7 +104,7 @@ ul {
 }
 
 
-.nav-links  li:hover {
+.nav-links li:hover {
   background: #fff;
 }
 
@@ -111,151 +112,21 @@ ul {
   color: rgb(0, 0, 0);
 }
 
-.checkbtn{
+.checkbtn {
   color: white;
   top: 50px;
   right: 30px;
   font-size: 50px;
   position: absolute;
-  cursor:pointer;
+  cursor: pointer;
   display: none;
- 
-}
-
-
-@media only screen and (max-width: 850px) {
-
-  .nav-menu {
-    padding: 0;
-  }
-    .checkbtn{
-      display: block;
-    }
-
-    .logo {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      z-index: 1;
-    }
-
-    .nav-links {
-      position:absolute;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, .95);
-      left: -100%;
-      transition: all .10s;
-      justify-content: center;
-    
-    }
-
-    
-    .nav-links li {
-      margin: 10px 0;
-      line-height: 30px;
-    }
-  
-    .nav-menu a{
-      font-size: 20px;
-    }
-    
-    .nav-links.show {
-      left:0;
-    }
-
-
-    
-    
-}
-
-@media only screen and (min-width: 1800px) {
-  
-    .header-contenido {
-      color:rgb(255, 255, 255);
-      text-align: center;
-      width: 50%;
-      margin-bottom: 5%;
-    }
-  
-    .header-contenido p {
-      font-size: 3vmin;
-      padding: 20px;
-      line-height: 80px;
-      color: #fff;
-      letter-spacing: 1px;
-      }
-  
-    .header-contenido h1 {
-      font-size: 5vmin;
-      text-transform: uppercase;
-      letter-spacing: 5px;
-      word-spacing: 0.25em;
-      padding: 10px;
-    }
-  
-    .logo img {
-      width: 20vmin;
-    }
-    
-    .nav-links  {
-      display: flex;
-      align-items: center;
-     
-    }
-    
-    .nav-links  li {
-      margin: 0 40px;
-      padding: 5px;
-    }
-    
-    .nav-links  a {
-      padding: 20px;
-      color: #fff;
-      text-decoration: none;
-      filter: brightness(100%);
-      letter-spacing: 2px;
-      font-size: 3vmin;
-    
-    }
-   
-  
-    blockquote p {
-      text-align: center;
-      width: 700px;
-      height: 100px;
-      margin-bottom: 30px;
-    }
-    
-    .frase p, .frase footer {
-      font-size: 30px;
-      text-align: center;
-      color: black;
-      letter-spacing: 1px;
-      line-height: 40px;
-    }
-    
-    .productos {
-      margin-top: 9000px;
-      
-      
-    }
-  
-    
-
-
-    .imagen_scroll {
-      margin-top: 700px;
-      background-image: url(../img/tulipanRosa.jpg);
-      background-repeat: no-repeat;
-      background-attachment: fixed;
-      background-size: cover;
-      height: 5em;
 
 }
 
-}
+
+
+
+
 
 
 
@@ -268,7 +139,7 @@ nav ul li:nth-child(5) {
   border-radius: 14px;
   padding: 5px;
   background-color: rgb(255, 255, 255);
-  
+
 }
 
 nav ul li:nth-child(5) a {
@@ -293,7 +164,7 @@ nav ul li:nth-child(5) a {
   margin: 5% auto;
   padding: 20px;
   font-style: italic;
-  
+
 }
 
 blockquote p {
@@ -302,7 +173,8 @@ blockquote p {
   height: 100px;
 }
 
-.frase p, .frase footer {
+.frase p,
+.frase footer {
   text-align: center;
   color: black;
   letter-spacing: 1px;
@@ -316,43 +188,6 @@ el flex direction pasa a ser columna
 
 */
 
-@media(min-width: 320px) and (max-width: 425px) {
-  .frase {
-    flex-direction: column;
-    height: 490px;
-   
-  }
-  blockquote p{
-    
-    text-align: center;
-  
-  }
-.frase img {
-  width: 90%;
-}
-  .frase .contenido {
-    height: 300px;
-  }
-
-  .frase p {
-    height: 200px;
-  }
-}
-
-@media (max-width: 800px) {
-  .frase {
-    flex-direction: column;
-  }
-  blockquote p{
-    text-align: center;
-    width: 100%;
-    padding: 10px;
-  }
-
-  .frase .contenido {
-    height: 170px;
-  }
-}
 
 
 
@@ -369,14 +204,14 @@ h2 {
   text-align: center;
   letter-spacing: 1px;
   color: #a6986d;
-  
+
 }
 
 .productos {
   display: flex;
   margin: auto;
   padding: 10px;
-  
+
 }
 
 .caja {
@@ -390,7 +225,7 @@ h2 {
   cursor: default;
   border: 1px black solid;
   transition: all 400ms ease;
- 
+
 }
 
 
@@ -401,7 +236,7 @@ h2 {
 
 .productos .caja img {
   width: 100%;
-  
+
 }
 
 
@@ -411,70 +246,20 @@ h2 {
 }
 
 .contenido p {
-   padding: 10px;
-    letter-spacing: 1px;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 
 .contenido a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    letter-spacing: 1px;
-    border: 1px black solid;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  border: 1px black solid;
 }
 
-@media(min-width: 320px) and (max-width: 425px) {
-  .productos {
-    width: 100%;
-    flex-direction: column;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  
-    
-  }
-  .caja {
-    width: 70%;
-    height: 95%;
-   
-  }
-}
-@media (max-width: 800px) {
-  .productos {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 400px;
-    margin-top: 30px;
-    margin: auto;
-    padding: 10px;
-    
-  }
 
-  .caja {
-    display: flex;
-    flex-direction: column;
-  
-   
-  }
- 
-}
-/*
-@media (max-width: 1199px) {
-  .productos {
-    display: grid;
-    height: 100%;
-    width: 400px;
-    margin-top: 30px;
-    padding: 10px;
-    
-  }
 
- 
-}
-
-*/
 
 /*IMAGEN SCROLL*/
 
@@ -509,13 +294,13 @@ h2 {
 
 .swiper-button-next,
 .swiper-button-prev {
-    background-color: white;
-    background-color: rgba(255, 255, 255, 0.5);
-    right:10px;
-    padding: 30px;
-    color: #000 !important;
-    fill: black !important;
-    stroke: black !important;
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
 }
 
 .contenedor-blogs figure {
@@ -524,7 +309,7 @@ h2 {
   overflow: hidden;
   border-radius: 6px;
   box-shadow: 0px 15px 25px;
-  cursor:pointer;
+  cursor: pointer;
 }
 
 .contenedor-blogs figure img {
@@ -533,25 +318,25 @@ h2 {
   transition: all 500ms ease-out;
 }
 
-.swiper figure .texto{
-  position:absolute;
+.swiper figure .texto {
+  position: absolute;
   top: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0,103,123,0.7);
+  background: rgba(0, 103, 123, 0.7);
   transition: all 500ms ease-out;
-  opacity:0 ;
+  opacity: 0;
   visibility: hidden;
   text-align: center;
 
 }
 
-.swiper figure:hover > .texto {
+.swiper figure:hover>.texto {
   opacity: 1;
   visibility: visible;
 }
 
-.blogs figure:hover > .texto h3 {
+.blogs figure:hover>.texto h3 {
   margin-top: 70px;
   margin-bottom: 15px;
 }
@@ -570,11 +355,12 @@ h2 {
   line-height: 1.5;
   width: 100%;
   max-width: 220px;
-  margin:auto;
+  margin: auto;
 }
 
 
-.contenedor-blogs .swiper-slide { /*script para el scroll de los blogs*/
+.contenedor-blogs .swiper-slide {
+  /*script para el scroll de los blogs*/
   position: relative;
   text-align: center;
   font-size: 18px;
@@ -582,36 +368,36 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
 }
 
 
 /*FOOTER*/
 
-.fa-instagram {  
-  background: #000000;  
-  color: white;  
-}  
+.fa-instagram {
+  background: #000000;
+  color: white;
+}
 
-.fa-facebook {  
-  color: white;  
-}  
+.fa-facebook {
+  color: white;
+}
 
-.fa-twitter {  
-  background: #000000;  
-  color: white;  
-}  
+.fa-twitter {
+  background: #000000;
+  color: white;
+}
 
 
 .pie {
   background-color: black;
-  color:#fff;
-  display:flex;
+  color: #fff;
+  display: flex;
   height: 250px;
   justify-content: space-between;
   align-items: center;
   text-align: center;
- 
+
 }
 
 .pie div {
@@ -622,42 +408,234 @@ h2 {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .pie h1 {
   letter-spacing: 6px;
 }
 
-.pie #redes ul{
+.pie #redes ul {
   padding: 15px;
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 
-.pie #redes li{
- font-size: 30px;
+.pie #redes li {
+  font-size: 30px;
 }
 
 .pie li {
   list-style: none;
-  line-height : 25px;
+  line-height: 25px;
 }
 
-.pie a , .pie li{
+.pie a,
+.pie li {
   text-decoration: none;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
- }
+}
 
 .pie p {
   letter-spacing: 2px;
 }
 
 
- @media(max-width: 800px) {
+
+
+@media(min-width: 320px) and (max-width: 425px) {
+
+  /*MENÚ DE NAVEGACIÓN*/
+  .nav-menu {
+    padding: 0;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+  }
+
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .95);
+    left: -100%;
+    transition: all .10s;
+    justify-content: center;
+
+  }
+
+
+  .nav-links li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+
+  .nav-menu a {
+    font-size: 20px;
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+
+  /*FRASE*/
+  .frase {
+    flex-direction: column;
+    height: 490px;
+
+  }
+
+  .frase img {
+    width: 90%;
+  }
+
+  .frase .contenido {
+    height: 200px;
+  }
+
+  blockquote {
+    width: 300px;
+  }
+
+  blockquote p {
+    height: 200px;
+    width: 300px;
+    text-align: center;
+
+  }
+
+
+
+
+  /*PRODUCTOS*/
+  .productos {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+
+  }
+
+  .caja {
+    width: 70%;
+    height: 95%;
+
+  }
+
+  /*PIE DE PÁGINA*/
+  .pie {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    justify-content: space-evenly;
+  }
+
+  .pie #redes {
+    /*El contenedor de redes pasa a primer lugar*/
+    order: -1;
+  }
+
+
+
+
+}
+
+
+@media(min-width: 426px) and (max-width: 800px) {
+
+  /*MENÚ DE NAVEGACIÓN*/
+  .nav-menu {
+    padding: 0;
+  }
+
+  .checkbtn {
+    display: block;
+  }
+
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+  }
+
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .95);
+    left: -100%;
+    transition: all .10s;
+    justify-content: center;
+
+  }
+
+
+  .nav-links li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+
+  .nav-menu a {
+    font-size: 20px;
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+
+  /*FRASE*/
+
+  .frase {
+    flex-direction: column;
+  }
+
+  blockquote p {
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .frase .contenido {
+    height: 170px;
+  }
+
+  /*PRODUCTOS*/
+  .productos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 400px;
+    margin-top: 30px;
+    margin: auto;
+    padding: 10px;
+
+  }
+
+  .caja {
+    display: flex;
+    flex-direction: column;
+
+
+  }
+
+  /*PIE DE PÁGINA*/
   .pie {
     height: 550px;
 
@@ -669,44 +647,117 @@ h2 {
     width: 300px;
   }
 
-  .pie #contacto, .pie #informacion {
+  .pie #contacto,
+  .pie #informacion {
     position: relative;
     margin-top: 100px;
     width: 50%;
   }
-  
-
- }
 
 
- @media(min-width: 320px) and (max-width: 425px) {
+}
 
-  .pie {
-    width: 100%;
-    height: 1000px;
-    margin: 0;
+@media only screen and (min-width: 1800px) {
+
+  .header-contenido {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 50%;
+    margin-bottom: 5%;
+  }
+
+  .header-contenido p {
+    font-size: 3vmin;
+    padding: 20px;
+    line-height: 80px;
+    color: #fff;
+    letter-spacing: 1px;
+  }
+
+  .header-contenido h1 {
+    font-size: 5vmin;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 0.25em;
+    padding: 10px;
+  }
+
+  .logo img {
+    width: 20vmin;
+  }
+
+  .nav-links {
+    display: flex;
+    align-items: center;
 
   }
 
-  .pie #redes {
-    position: relative;
-    margin-bottom: 700px;
+  .nav-links li {
+    margin: 0 40px;
+    padding: 5px;
+  }
+
+  .nav-links a {
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    filter: brightness(100%);
+    letter-spacing: 2px;
+    font-size: 3vmin;
+
+  }
+
+
+  blockquote p {
+    text-align: center;
+    width: 700px;
+    height: 100px;
+    margin-bottom: 30px;
+  }
+
+  .frase p,
+  .frase footer {
+    font-size: 30px;
+    text-align: center;
+    color: black;
+    letter-spacing: 1px;
+    line-height: 40px;
+  }
+
+  .productos {
+    margin-top: 9000px;
+
+
+  }
+
+
+
+
+  .imagen_scroll {
+    margin-top: 700px;
+    background-image: url(../img/tulipanRosa.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 5em;
+
+  }
+
+}
+
+
+/*
+@media (max-width: 1199px) {
+  .productos {
+    display: grid;
+    height: 100%;
+    width: 400px;
+    margin-top: 30px;
+    padding: 10px;
     
   }
 
-  .pie #contacto{
-    position: absolute;
-    margin-bottom: 300px;
-    width: 100%;
-  }
-
-  .pie #informacion{
-    position: absolute;
-    margin-top: 300px;
-    width: 50%;
-  }
-
  
-  
+}
 
- }
+*/
