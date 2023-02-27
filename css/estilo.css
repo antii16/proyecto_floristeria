@@ -11,6 +11,7 @@ html,
 body {
   width: 100%;
   overflow-x: hidden;
+  padding:0;
 }
 
 /*ASPECTOS GENERALES QUE SE APLICAN A TODO EL PROYECTO*/
@@ -20,6 +21,10 @@ a {
   font-size: 0.9375rem;
   letter-spacing: 1px;
   padding: 10px;
+}
+
+ul {
+  list-style: none;
 }
 
 a, p{
@@ -63,7 +68,7 @@ header {
 }
 
 .header-contenido h1 {
-  font-size: 5vmin;
+  /*font-size: 5vmin;*/
   text-transform: uppercase;
   letter-spacing: 5px;
   word-spacing: 0.25em;
@@ -73,9 +78,7 @@ header {
 
 /* MENÚ DE NAVEGACIÓN*/
 
-ul {
-  list-style: none;
-}
+
 
 .nav-menu {
   position: absolute;
@@ -106,9 +109,9 @@ ul {
 .nav-links a {
   padding: 20px;
   color: #fff;
-  text-decoration: none;
+  
   filter: brightness(100%);
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 
 }
 
@@ -185,7 +188,6 @@ blockquote p {
 .frase p,
 .frase footer {
   text-align: center;
-  color: black;
   letter-spacing: 1px;
   line-height: 30px;
 }
@@ -342,7 +344,7 @@ h2 {
 
 }
 
-.swiper figure:hover>.texto {
+.swiper figure:hover >.texto {
   opacity: 1;
   visibility: visible;
 }
@@ -761,7 +763,7 @@ p, footer  {
 
 
 
-@media(min-width: 2560px) {
+@media(min-width: 2000px) {
 
  
   header {
