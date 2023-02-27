@@ -5,23 +5,32 @@
   padding: 0;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
-
-
-}
+  }
 
 html,
 body {
   width: 100%;
   overflow-x: hidden;
+}
 
+/*ASPECTOS GENERALES QUE SE APLICAN A TODO EL PROYECTO*/
+
+a {
+  text-decoration: none;
+  font-size: 0.9375rem;
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+a, p{
+  font-size: 0.9375rem;
 }
 
 
 .header-contenido a {
-  padding: 10px;
-  text-decoration: none;
+  
   color: rgb(255, 255, 255);
-  letter-spacing: 1px;
+  
   border: 1px rgb(255, 255, 255) solid;
 }
 
@@ -33,7 +42,7 @@ header {
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
 
 
 }
@@ -42,13 +51,13 @@ header {
   color: rgb(255, 255, 255);
   text-align: center;
   width: 50%;
-  margin-bottom: 50px;
+  margin-top: 250px;
 }
 
 .header-contenido p {
-  font-size: 3vmin;
+ /* font-size: 3vmin;*/
   padding: 20px;
-  line-height: 30px;
+  line-height:50px;
   color: #fff;
   letter-spacing: 1px;
 }
@@ -80,7 +89,7 @@ ul {
 }
 
 .logo img {
-  width: 20vmin;
+  width: 15vmin;
 }
 
 .nav-links {
@@ -199,7 +208,7 @@ main {
 }
 
 h2 {
-  font-size: 8vmin;
+  font-size: 6vmin;
   margin-top: 100px;
   text-align: center;
   letter-spacing: 1px;
@@ -279,7 +288,9 @@ h2 {
 .contenedor-blogs {
   width: 100%;
   padding: 10px 40px;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
+
+
 }
 
 .swiper-slide {
@@ -289,7 +300,7 @@ h2 {
 
 .swiper {
   width: 90%;
-  height: 400px;
+  height: 390px;
 }
 
 .swiper-button-next,
@@ -307,8 +318,8 @@ h2 {
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-radius: 6px;
-  box-shadow: 0px 15px 25px;
+  border-radius: 2px;
+  box-shadow: 0px 5px 10px;
   cursor: pointer;
 }
 
@@ -337,7 +348,7 @@ h2 {
 }
 
 .blogs figure:hover>.texto h3 {
-  margin-top: 70px;
+ margin-top: 10px;
   margin-bottom: 15px;
 }
 
@@ -345,7 +356,7 @@ h2 {
   color: #fff;
   font-weight: 400;
   transition: all 500ms ease-out;
-  margin-top: 30px;
+ /* margin-top: 30px;*/
   margin-bottom: 120px;
 }
 
@@ -372,6 +383,7 @@ h2 {
 }
 
 
+
 /*FOOTER*/
 
 .fa-instagram {
@@ -391,53 +403,48 @@ h2 {
 
 .pie {
   background-color: black;
-  color: #fff;
-  display: flex;
+  color:#fff;
+  display:flex;
   height: 250px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
-
-}
-
-.pie div {
-  width: 30%;
+ 
 }
 
 .pie ul {
   padding: 15px;
   display: flex;
   flex-direction: column;
-
+  
 }
 
 .pie h1 {
   letter-spacing: 6px;
 }
 
-.pie #redes ul {
+.pie #redes ul{
   padding: 15px;
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content:space-evenly;
 }
 
 
-.pie #redes li {
-  font-size: 30px;
+.pie #redes li{
+ font-size: 30px;
 }
 
 .pie li {
   list-style: none;
-  line-height: 25px;
+  line-height : 25px;
 }
 
-.pie a,
-.pie li {
+.pie a , .pie li{
   text-decoration: none;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
-}
+ }
 
 .pie p {
   letter-spacing: 2px;
@@ -445,16 +452,20 @@ h2 {
 
 
 
+@media only screen and (max-width: 767px) {
 
-@media(min-width: 320px) and (max-width: 425px) {
-
-  /*MENÚ DE NAVEGACIÓN*/
+  
+p, footer  {
+  font-size: 3.88888889vw;
+}
+  /*MENÚ DE NAVEGACIÓN
   .nav-menu {
     padding: 0;
   }
 
   .checkbtn {
     display: block;
+    font-size: 40px;
   }
 
   .logo {
@@ -482,44 +493,99 @@ h2 {
     line-height: 30px;
   }
 
-  .nav-menu a {
-    font-size: 20px;
-  }
 
   .nav-links.show {
     left: 0;
   }
 
+  .logo {
+    width: 100px;
+  }
+  .logo img {
+    width: 100%;
+  }
+
+  */
+
+  /*HEADER*/
+
+  .header-contenido {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    width: 80%;
+    margin-top: 150px;
+  }
+
+  .header-contenido h1 {
+    font-size: 8.33333333vw;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    word-spacing: 0.25em;
+    padding: 10px;
+  }
+  
+  .header-contenido a {
+    font-size: 0.9375rem;
+    
+  }
+
+  
+  .header-contenido p {
+   /* font-size: 3vmin;*/
+    padding: 20px;
+    line-height:40px;
+    letter-spacing: 1px;
+    font-size: 3.88888889vw;
+  }
+  
+
+
   /*FRASE*/
   .frase {
     flex-direction: column;
     height: 490px;
-
+    justify-content: center;
   }
 
   .frase img {
     width: 90%;
+
   }
 
   .frase .contenido {
     height: 200px;
+    padding:30px;
   }
 
   blockquote {
     width: 300px;
+
   }
 
   blockquote p {
-    height: 200px;
+    height: 150px;
     width: 300px;
     text-align: center;
-
+  
   }
+  blockquote footer {
+    margin-top: 20px;
+    font-weight: bold;
+  }
+  
 
 
 
 
   /*PRODUCTOS*/
+
+  h2 {
+    max-width: 86.66666667vw;
+    font-size: 7.22222222vw;
+    line-height: 1.33;
+
+    margin: 50px auto 0;
+  }
   .productos {
     width: 100%;
     flex-direction: column;
@@ -528,14 +594,60 @@ h2 {
     align-items: center;
     text-align: center;
 
-
   }
 
+  .productos a {
+    font-size: 3.88888889vw; 
+  }
   .caja {
     width: 70%;
     height: 95%;
 
   }
+
+/*BLOGS*/
+.blogs figure .texto p {
+  font-size: 12px;
+}
+
+ 
+
+.contenedor-blogs {
+  width: 100%;
+  padding: 5px;
+
+
+}
+
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper {
+  width: 100%;
+  height: 390px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  background-color: white;
+  background-color: rgba(255, 255, 255, 0.5);
+  right: 10px;
+  padding: 30px;
+  color: #000 !important;
+  fill: black !important;
+  stroke: black !important;
+}
+
+.contenedor-blogs .swiper-slide {
+  /*script para el scroll de los blogs*/
+
+  justify-content: center;
+  align-items: center;
+
+}
+  
 
   /*PIE DE PÁGINA*/
   .pie {
@@ -556,13 +668,10 @@ h2 {
 }
 
 
-@media(min-width: 426px) and (max-width: 800px) {
-
-  /*MENÚ DE NAVEGACIÓN*/
+@media only screen and (max-width: 1279px) {
   .nav-menu {
     padding: 0;
   }
-
   .checkbtn {
     display: block;
   }
@@ -599,11 +708,36 @@ h2 {
   .nav-links.show {
     left: 0;
   }
+  .logo {
+    width: 100px;
+  }
+  .logo img {
+    width: 100%;
+  }
 
-  /*FRASE*/
+}
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1440px) {
+ 
+  
+  .header-contenido{
+    margin-top: 200px;
+  }
+
+  .header-contenido h1 {
+    font-size: 3.33333333vw;
+  }
+
+  p,a {
+    
+    font-size: 1.25vw;
+    
+  }
 
   .frase {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   blockquote p {
@@ -616,95 +750,46 @@ h2 {
     height: 170px;
   }
 
-  /*PRODUCTOS*/
-  .productos {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 400px;
-    margin-top: 30px;
-    margin: auto;
-    padding: 10px;
-
-  }
-
-  .caja {
-    display: flex;
-    flex-direction: column;
-
-
-  }
-
-  /*PIE DE PÁGINA*/
-  .pie {
-    height: 550px;
-
-  }
-
-  .pie #redes {
-    position: relative;
-    margin-bottom: 300px;
-    width: 300px;
-  }
-
-  .pie #contacto,
-  .pie #informacion {
-    position: relative;
-    margin-top: 100px;
-    width: 50%;
+  blockquote footer {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.25vw;
   }
 
 
 }
 
-@media only screen and (min-width: 1800px) {
 
-  .header-contenido {
-    color: rgb(255, 255, 255);
-    text-align: center;
-    width: 50%;
-    margin-bottom: 5%;
+
+@media(min-width: 2560px) {
+
+ 
+  header {
+    height: 70vh;
+   
+  
+  
+  }
+ 
+ 
+  .header-contenido p {
+    font-size: 1.25vw;
+    line-height: 100px;
   }
 
-  .header-contenido p {
-    font-size: 3vmin;
-    padding: 20px;
-    line-height: 80px;
-    color: #fff;
-    letter-spacing: 1px;
+  .header-contenido  a{
+    font-size: 1.25vw;
   }
 
   .header-contenido h1 {
-    font-size: 5vmin;
-    text-transform: uppercase;
-    letter-spacing: 5px;
-    word-spacing: 0.25em;
-    padding: 10px;
+    font-size: 3.33333333vw;
   }
 
+  .logo {
+    width: 100px;
+  }
   .logo img {
-    width: 20vmin;
-  }
-
-  .nav-links {
-    display: flex;
-    align-items: center;
-
-  }
-
-  .nav-links li {
-    margin: 0 40px;
-    padding: 5px;
-  }
-
-  .nav-links a {
-    padding: 20px;
-    color: #fff;
-    text-decoration: none;
-    filter: brightness(100%);
-    letter-spacing: 2px;
-    font-size: 3vmin;
-
+    width: 100%;
   }
 
 
@@ -717,47 +802,51 @@ h2 {
 
   .frase p,
   .frase footer {
-    font-size: 30px;
+    /*font-size: 30px;*/
     text-align: center;
     color: black;
     letter-spacing: 1px;
     line-height: 40px;
+    font-size: 1.25vw;
+  }
+
+  .frase footer {
+    margin-top:100px;
+    font-weight: bold;
   }
 
   .productos {
-    margin-top: 9000px;
-
-
+    margin-top: 100px;
   }
 
-
-
-
   .imagen_scroll {
-    margin-top: 700px;
+    margin-top: 100px;
     background-image: url(../img/tulipanRosa.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 5em;
+    height: 500px;
 
   }
 
-}
+  .contenedor-blogs {
+    margin-top: 100px;
+  }
 
+  .pie h3, .pie li {
+    font-size: 1.25vw;
+    line-height: 40px;
+  }
 
-/*
-@media (max-width: 1199px) {
-  .productos {
-    display: grid;
-    height: 100%;
-    width: 400px;
-    margin-top: 30px;
-    padding: 10px;
+  p,a {
+    
+    font-size: 1.25vw;
     
   }
 
- 
+
 }
 
-*/
+
+
+

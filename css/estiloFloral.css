@@ -1,8 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   list-style: none;
@@ -24,25 +24,25 @@ body {
   width: 100%;
   padding: 20px;
   justify-content: space-between;
- 
+
 }
 
 .logo img {
   width: 5rem;
 }
 
-.nav-links  {
+.nav-links {
   display: flex;
   align-items: center;
- 
+
 }
 
-.nav-links  li {
- margin: 0 30px;
+.nav-links li {
+  margin: 0 30px;
   padding: 0px;
 }
 
-.nav-links  a {
+.nav-links a {
   padding: 10px;
   color: #000000;
   text-decoration: none;
@@ -52,7 +52,7 @@ body {
 }
 
 
-.nav-links  li:hover {
+.nav-links li:hover {
   background: #fff;
 }
 
@@ -64,23 +64,23 @@ body {
 /*CONTENIDO DEL HEADER*/
 
 header {
-    margin-top: 170px;
-    height: 50vh;
-    background-image:linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/floral2.jpg); 
-    background-position: bottom;
-    background-size: cover;
-    width: 100%;
-    display: flex;
-    justify-content: center;
+  margin-top: 170px;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/floral2.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
 }
 
 .titulo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.titulo  h1 {
+.titulo h1 {
   font-size: 3rem;
   letter-spacing: 5px;
   padding: 10px;
@@ -95,7 +95,7 @@ header {
 
 /*MENÚ DE NAVEGACIÓN*/
 
-  
+
 /* ESCRIBENOS */
 /*
 nav ul li:nth-child(5) {
@@ -134,17 +134,17 @@ nav ul li:nth-child(5) a {
 
 
 .filter {
-  margin-left: 5% ;
+  margin-left: 5%;
   margin-top: 50px;
 }
 
-.lista_decoraciones{
-    display: grid;
-    padding: 10px;
-    grid-template-columns: 1fr 1fr 1fr;
-     
+.lista_decoraciones {
+  display: grid;
+  padding: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+
 }
-  
+
 .lista_decoraciones .contenido-seccion {
   width: 90%;
   margin: 20px;
@@ -172,80 +172,81 @@ nav ul li:nth-child(5) a {
 }
 
 .contenido p {
-    padding: 10px;
-    letter-spacing: 1px;
+  padding: 10px;
+  letter-spacing: 1px;
 }
 
 .contenido a {
-    padding: 10px;
-    text-decoration: none;
-    color: black;
-    letter-spacing: 1px;
-    border: 1px black solid;
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  border: 1px black solid;
 }
 
 
 /*FOOTER*/
 
-.fa-instagram {  
-  background: #000000;  
-  color: white;  
-}  
+.fa-instagram {
+  background: #000000;
+  color: white;
+}
 
-.fa-facebook {  
-  color: white;  
-}  
+.fa-facebook {
+  color: white;
+}
 
-.fa-twitter {  
-  background: #000000;  
-  color: white;  
-}  
+.fa-twitter {
+  background: #000000;
+  color: white;
+}
 
 
 .pie {
   background-color: black;
-  color:#fff;
-  display:flex;
+  color: #fff;
+  display: flex;
   height: 250px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   text-align: center;
- 
+
 }
 
 .pie ul {
   padding: 15px;
   display: flex;
   flex-direction: column;
-  
+
 }
 
 .pie h1 {
   letter-spacing: 6px;
 }
 
-.pie #redes ul{
+.pie #redes ul {
   padding: 15px;
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
 }
 
 
-.pie #redes li{
- font-size: 30px;
+.pie #redes li {
+  font-size: 30px;
 }
 
 .pie li {
   list-style: none;
-  line-height : 25px;
+  line-height: 25px;
 }
 
-.pie a , .pie li{
+.pie a,
+.pie li {
   text-decoration: none;
   color: rgb(255, 255, 255);
   letter-spacing: 1px;
- }
+}
 
 .pie p {
   letter-spacing: 2px;
@@ -259,7 +260,7 @@ nav ul li:nth-child(5) a {
 }
 
 #paginacion ul {
-padding: 50px;
+  padding: 50px;
 }
 
 ul.pagination {
@@ -282,15 +283,15 @@ ul.pagination li a {
 
 /**MEDIA QUERIES*/
 
-.checkbtn{
+.checkbtn {
   color: #474f59;
   top: 50px;
   right: 30px;
   font-size: 50px;
   position: absolute;
-  cursor:pointer;
+  cursor: pointer;
   display: none;
- 
+
 }
 
 @media(min-width: 320px) and (max-width: 425px) {
@@ -303,137 +304,142 @@ ul.pagination li a {
   .titulo h1 {
     font-size: calc(1vw + 1.5rem);
   }
-  
+
 
   /*NAVEGACION*/
 
   .nav-menu {
     padding: 0;
   }
-    .checkbtn{
-      display: block;
-    }
 
-    .logo {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      z-index: 1;
-    }
+  .checkbtn {
+    display: block;
+  }
 
-    .nav-links {
-      position:absolute;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, .95);
-      left: -100%;
-      transition: all .10s;
-      justify-content: center;
-    
-    }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+  }
 
-    
-    .nav-links li {
-      margin: 10px 0;
-      line-height: 30px;
-    }
-  
-    .nav-menu a{
-      font-size: 20px;
-    }
-    
-    .nav-links.show {
-      left:0;
-    }
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .95);
+    left: -100%;
+    transition: all .10s;
+    justify-content: center;
 
- 
+  }
+
+
+  .nav-links li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+
+  .nav-menu a {
+    font-size: 20px;
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+
+
 
 
   /*LISTA DE DECORACIONES*/
 
-  .lista_decoraciones{
+  .lista_decoraciones {
     grid-template-columns: 1fr;
-     
+
+  }
+
+  /*PIE*/
+
+  .pie {
+    display: flex;
+    flex-direction: column;
+    height: 1000px;
+    justify-content: space-evenly;
+  }
+
+  .pie #redes {
+    /*El contenedor de redes pasa a primer lugar*/
+    order: -1;
+  }
+
+
 }
-/*PIE*/
-
-.pie {
- display: flex;
-  flex-direction: column;
-  height: 1000px;
-  justify-content: space-evenly;
-}
-
-.pie #redes { /*El contenedor de redes pasa a primer lugar*/
-  order: -1;
-}
 
 
- }
+@media(min-width: 426px) and (max-width: 800px) {
 
-
-@media(min-width: 426px) and (max-width: 800px){
-  
   .nav-menu {
     padding: 0;
   }
-    .checkbtn{
-      display: block;
-    }
 
-    .logo {
-      position: absolute;
-      top: 30px;
-      left: 30px;
-      z-index: 1;
-    }
+  .checkbtn {
+    display: block;
+  }
 
-    .nav-links {
-      position:absolute;
-      flex-direction: column;
-      width: 100%;
-      height: 100vh;
-      background: rgba(0, 0, 0, .95);
-      left: -100%;
-      transition: all .10s;
-      justify-content: center;
-    
-    }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+  }
 
-    
-    .nav-links li {
-      margin: 10px 0;
-      line-height: 30px;
-    }
-  
-    .nav-menu a{
-      font-size: 20px;
-    }
-    
-    .nav-links.show {
-      left:0;
-    }
-  
+  .nav-links {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, .95);
+    left: -100%;
+    transition: all .10s;
+    justify-content: center;
 
-  
+  }
 
-    .lista_decoraciones{
-      display: grid;
-      padding: 10px;
-      grid-template-columns: 1fr 1fr;
-       
+
+  .nav-links li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+
+  .nav-menu a {
+    font-size: 20px;
+  }
+
+  .nav-links.show {
+    left: 0;
+  }
+
+
+
+
+  .lista_decoraciones {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr;
+
   }
 
   .lista_decoraciones .contenido-seccion {
     width: 95%;
-   
+
   }
 
   .titulo h1 {
     font-size: calc(1vw + 1.5rem);
   }
 }
+
 /*
 
 @media(min-width: 1024px) and (max-width: 1440px){
@@ -487,41 +493,40 @@ ul.pagination li a {
   }
 }
 */
-@media(min-width: 2056px){
-  
+@media(min-width: 2056px) {
+
   .logo img {
     width: 12rem;
   }
 
   header {
     margin-top: 300px;
-  
-}
 
-  .nav-links  li {
+  }
+
+  .nav-links li {
     margin: 0 30px;
     padding: 10px;
   }
-  
-  .nav-links  a {
-    font-size: 3vmin;
-    padding: 10px;
-  
-  }
-  
-  
-  
 
-    .lista_decoraciones{
-      display: grid;
-      padding: 10px;
-      grid-template-columns: 1fr 1fr 1fr;
-       
+  .nav-links a {
+    font-size: 1em;
+    padding: 10px;
+
+  }
+
+
+
+  .lista_decoraciones {
+    display: grid;
+    padding: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+
   }
 
   .lista_decoraciones .contenido-seccion {
     width: 95%;
-   
+
   }
 
   .pie {
