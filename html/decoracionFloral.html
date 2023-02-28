@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../css/estiloFloral.css">
+    <link type="text/css" rel="stylesheet" href="../sass/estiloSecundario.css">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -14,13 +14,10 @@
         $(document).ready(function() {
             $('.checkbtn').click(function() {
                 $('.nav-links').toggleClass('show');
-                
-                /*$('.checkbtn').css("color", "white");*/
+            })
 
-            }
-            
-            )
         })
+       
     </script>
     <title>Jazmin</title>
 </head>
@@ -75,22 +72,34 @@
         <section class="lista_decoraciones">
 
             <div class="contenido-seccion">
-                
-                <img src="../img/floral1.jpg" alt="Decoración Floral">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral1_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral1_1000.jpg" />
+                    
+                    <img src="../img/floral1.jpg" alt="Decoración Floral">
+                </picture>
+               
                
                 <div class="contenido">
                     <p>Subtitle</p>
+                    <a href="#">Ver más</a>
                 </div>
    
             </div>
 
             <div class="contenido-seccion">
                 
-                <img src="../img/decoracionFloral.jpg" alt="Decoración Floral">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral2_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral2_1000.jpg" />
+                    
+                    <img src="../img/floral2.jpg" alt="Decoración Floral">
+                </picture>
                
 
                 <div class="contenido">
                     <p>Subtitle</p>
+                    <a href="#">Ver más</a>
                 </div>
 
                
@@ -98,11 +107,18 @@
             </div>
             <div class="contenido-seccion">
                 
-                <img src="../img/floral2.jpg" alt="Decoración Floral">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral3_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral3_1000.jpg" />
+                    
+                    <img src="../img/floral3.jpg" alt="Decoración Floral">
+                </picture>
                
 
                 <div class="contenido">
+                    
                     <p>Subtitle</p>
+                    <a href="#">Ver más</a>
                 </div>
 
                
@@ -110,11 +126,17 @@
             </div>
             <div class="contenido-seccion">
                 
-                <img src="../img/floral3.jpg" alt="Decoración Floral">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral4_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral4_1000.jpg" />
+                    
+                    <img src="../img/floral4.jpg" alt="Decoración Floral">
+                </picture>
                
 
                 <div class="contenido">
                     <p>Subtitle</p>
+                    <a href="#">Ver más</a>
                 </div>
 
                
@@ -122,11 +144,17 @@
             </div>
             <div class="contenido-seccion">
                 
-                <img src="../img/floral4.jpg" alt="Decoración Floral">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral5_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral5_1000.jpg" />
+                    
+                    <img src="../img/floral5.jpg" alt="Decoración Floral">
+                </picture>
                
 
                 <div class="contenido">
                     <p>Subtitle</p>
+                    <a href="#">Ver más</a>
                 </div>
 
                
@@ -134,11 +162,17 @@
             </div>
             <div class="contenido-seccion">
                 
-                <img src="../img/decoracionFloral.jpg" alt="Decoración Floral">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral6_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral6_1000.jpg" />
+                    
+                    <img src="../img/floral6.jpg" alt="Decoración Floral">
+                </picture>
                
 
                 <div class="contenido">
                     <p>Subtitle</p>
+                    <a href="#">Ver más</a>
                 </div>
 
                
@@ -149,8 +183,8 @@
 
     </main>
 
-    <nav id="paginacion">
-        <ul class="pagination">
+    <nav class="paginacion">
+        <ul id="pagination">
             <li><a href="#">«</a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
