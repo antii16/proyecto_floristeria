@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/*VARIABLES*/
+/*MEDIA QUERIES*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-menu {
+  position: absolute;
+  display: flex;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px;
+  justify-content: space-between;
+}
+.nav-menu .logo img {
+  width: 15vmin;
+}
+.nav-menu .nav-links {
+  display: flex;
+  align-items: center;
+}
+.nav-menu .nav-links li {
+  margin: 0 30px;
+  padding: 5px;
+  background-color: #474f59;
+  border-radius: 6px;
+  list-style: none;
+}
+.nav-menu .nav-links li a {
+  padding: 20px;
+  color: #fff;
+  letter-spacing: 2px;
+  text-decoration: none;
+}
+.nav-menu .nav-links li:hover {
+  background-color: #d9c5c1;
+  border-radius: 6px;
+}
+.nav-menu .nav-links li:hover a {
+  color: black;
+}
+.nav-menu .nav-links li:nth-child(5) {
+  background-color: #d9c5c1;
+  padding: 10px;
+}
+.nav-menu .nav-links li:nth-child(5) a {
+  color: black;
+}
+.nav-menu .nav-links li:nth-child(5):hover {
+  background-color: #474f59;
+}
+.nav-menu .nav-links li:nth-child(5):hover a {
+  color: #fff;
+}
+.nav-menu .checkbtn {
+  color: #474f59;
+  top: 50px;
+  right: 30px;
+  font-size: 50px;
+  position: absolute;
+  cursor: pointer;
+  display: none;
+}
+@media only screen and (max-width: 1279px) {
+  .nav-menu {
+    padding: 0;
+  }
+  .nav-menu .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    width: 100px;
+  }
+  .nav-menu .logo img {
+    width: 100%;
+  }
+  .nav-menu .nav-links {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.95);
+    left: -100%;
+    transition: all 0.1s;
+    justify-content: center;
+  }
+  .nav-menu .nav-links li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+  .nav-menu .nav-links li:nth-child(1) {
+    margin-top: 150px;
+  }
+  .nav-menu .nav-links.show {
+    left: 0;
+  }
+  .nav-menu .checkbtn {
+    display: block;
+  }
+}
+
+header {
+  margin-top: 170px;
+  height: 50vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/sobreNosotros.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+header .titulo h1 {
+  font-size: 5vmin;
+  letter-spacing: 5px;
+  padding: 10px;
+  font-style: italic;
+  color: white;
+  text-transform: uppercase;
+  word-spacing: 0.25em;
+}
+@media only screen and (min-width: 2000px) {
+  header {
+    margin-top: 300px;
+    height: 30vh;
+  }
+}
+
+.presentacion, .valores {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 50px auto 0px auto;
+  padding: 50px;
+}
+.presentacion .texto, .valores .texto {
+  width: 90%;
+  text-align: center;
+}
+.presentacion .texto p, .valores .texto p {
+  margin: 50px;
+  letter-spacing: 1px;
+  line-height: 30px;
+}
+.presentacion .imagen, .valores .imagen {
+  width: 50%;
+}
+.presentacion .imagen img, .valores .imagen img {
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .presentacion, .valores {
+    flex-direction: column;
+  }
+  .presentacion .texto, .valores .texto {
+    /*El contenedor de redes pasa a primer lugar*/
+    order: -1;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.empleados {
+  display: flex;
+  margin: auto;
+  padding: 10px;
+}
+.empleados .caja {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 400px;
+  margin: 20px;
+  background-color: #fff;
+  cursor: default;
+  border: 1px black solid;
+  transition: all 400ms ease;
+}
+.empleados .caja img {
+  width: 100%;
+}
+.empleados .caja .contenido {
+  text-align: center;
+  padding: 15px;
+}
+.empleados .caja .contenido p {
+  padding: 10px;
+  letter-spacing: 1px;
+}
+.empleados .caja .contenido a {
+  padding: 10px;
+  text-decoration: none;
+  color: black;
+  letter-spacing: 1px;
+  border: 1px black solid;
+}
+@media only screen and (max-width: 767px) {
+  .empleados {
+    width: 100%;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .empleados .caja {
+    width: 70%;
+    height: 95%;
+  }
+  .empleados .caja a {
+    font-size: 3.88888889vw;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .empleados {
+    margin-top: 100px;
+  }
+}
+
+.pie {
+  background-color: black;
+  color: #fff;
+  display: flex;
+  height: 250px;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+}
+.pie h1 {
+  letter-spacing: 6px;
+}
+.pie ul {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+}
+.pie ul li {
+  list-style: none;
+  line-height: 25px;
+}
+.pie ul li a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  letter-spacing: 1px;
+}
+.pie #redes ul {
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+@media only screen and (max-width: 767px) {
+  .pie {
+    flex-direction: column;
+    height: 1000px;
+  }
+  .pie #redes {
+    /*El contenedor de redes pasa a primer lugar*/
+    order: -1;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .pie {
+    margin-top: 300px;
+  }
+}/*# sourceMappingURL=estiloSobreNosotros.css.map */
