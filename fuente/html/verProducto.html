@@ -6,23 +6,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../sass/estiloProducto.css">
     <title>Jazmin</title>
 </head>
 <body>
     
-    <nav class="nav-menu">
-        
-        <div class="logo">
-            <a href="../index.html"><img src="../img/logoA.png" alt="Logotipo"></a>
+    <nav class="navbar navbar-expand-lg navbarScroll border-bottom">
+        <div class="navbar-brand nav-link">
+            <a class="navbar-brand px-0" href="../index.html"><img class="w-50 p-3" src="../img/logoA.png" alt="Logotipo"></a>
+
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item mx-4 px-3 bg-dark rounded">
+                    <a class="nav-link text-white" href="decoracionFloral.html">Decoración floral</a>
+                </li>
+
+                <li class="nav-item mx-4 px-2 bg-dark rounded">
+                    <a class="nav-link text-white" href="decoracionFloral.html">Ramos y Coronas</a>
+                </li>
+                <li class="nav-item mx-4 px-2 bg-dark rounded">
+                    <a class="nav-link text-white" href="decoracionFloral.html">Regalos</a>
+                </li>
+                <li class="nav-item mx-4 px-2 bg-dark rounded">
+                    <a class="nav-link text-white" href="decoracionFloral.html">Blog</a>
+                </li>
+                <li class="nav-item mx-4 px-2 bg-primary rounded">
+                    <a class="nav-link text-black" href="decoracionFloral.html">Escríbenos</a>
+                </li>
+
+            </ul>
+
         </div>
         
-        <ul class="nav-links">
-            <li><a href="decoracionFloral.html">Decoración floral</a></li>
-            <li><a href="#">Ramos y Coronas</a></li>
-            <li><a href="#">Regalos</a></li>
-            <li><a href="#">Blog</a></li>
-            <li id="escribenos"><a href="#">Escríbenos</a></li>
-        </ul>
 
         <label class="checkbtn">
             <i class="fa fa-bars"></i>
@@ -31,20 +47,25 @@
         
     </nav>
 
-    <main>
-        <div>
+    <main class="container">
+        <section class="mt-4 mb-5">
+            <a class="text-dark" href="decoracionFloral.html">Decoración Floral</a> > <a class="text-dark" href="verProducto.html">Boda</a>
+        </section>
+       
+        <section class="mt-4 mb-5 row rounded-3 border shadow">
 
-            <div class="grid">
+            <h1 class="text-center">Producto</h1>
+            <div class="col-lg-4 flex-grow-1">
                 <picture>
                     <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral2_700.jpg" />
                     <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral2_1000.jpg" />
                     
-                    <img src="../img/floral2.jpg" alt="Decoración Floral">
+                    <img class="img-fluid" src="../img/floral2.jpg" alt="Decoración Floral">
                 </picture>
             </div>
     
-            <div>
-                <h1>Producto</h1>
+            <div class="col-lg-5 p-3 p-lg-5 pt-lg-3 text-center">
+                
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident maiores fugit velit voluptates? Cum repudiandae repellendus temporibus magnam corrupti ullam officiis consequatur ex suscipit, aut ipsam fugiat, harum voluptate eaque.</p>
                 <h3>Precio: 20€</h3>
     
@@ -54,13 +75,44 @@
                 </div>
             </div>
 
-        </div>
-
-        <section>
-            <h1>Comentarios</h1>
-
         </section>
+
+        
         
     </main>
+
+    <footer class="pie text-white">
+        <div id="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li>Dirección: 831 Elm St, New York</li>
+                <li>Telefono: 666-888-999</li>
+                <li>E-mail: florjazmin@gmail.com</li>
+            </ul>
+        </div>
+
+        <div id="redes">
+            <h1>JAZMIN</h1>
+            <ul>
+                <li><a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a></li>
+                <li><a href="https://es-es.facebook.com/"><i class="bi bi-facebook"></i></a></li>
+                <li><a href="https://twitter.com/?lang=es"><i class="bi bi-twitter"></i></a></li>
+            </ul>
+
+            <p>Copyright &copy; 2022</p>
+              
+        </div>
+        <div id="informacion">
+            <h3>Informacion</h3>
+            <ul>
+                <li><a href="#">Sobre nosotros</a></li>
+                <li><a href="#">Aviso ligal</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <script type="module" src="../../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
