@@ -1,0 +1,325 @@
+@import "https://fonts.googleapis.com/css2?family=Montserrat&display=swap";
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Montserrat, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.nav-menu {
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.nav-menu .logo img {
+  width: 15vmin;
+}
+
+.nav-menu .nav-links {
+  align-items: center;
+  display: flex;
+}
+
+.nav-menu .nav-links li {
+  background-color: #474f59;
+  border-radius: 6px;
+  margin: 0 30px;
+  padding: 5px;
+  list-style: none;
+}
+
+.nav-menu .nav-links li a {
+  color: #fff;
+  letter-spacing: 2px;
+  padding: 20px;
+  text-decoration: none;
+}
+
+.nav-menu .nav-links li:hover {
+  background-color: #d9c5c1;
+  border-radius: 6px;
+}
+
+.nav-menu .nav-links li:hover a {
+  color: #000;
+}
+
+.nav-menu .nav-links li:nth-child(5) {
+  background-color: #d9c5c1;
+  padding: 10px;
+}
+
+.nav-menu .nav-links li:nth-child(5) a {
+  color: #000;
+}
+
+.nav-menu .nav-links li:nth-child(5):hover {
+  background-color: #474f59;
+}
+
+.nav-menu .nav-links li:nth-child(5):hover a {
+  color: #fff;
+}
+
+.nav-menu .checkbtn {
+  color: #474f59;
+  cursor: pointer;
+  font-size: 50px;
+  display: none;
+  position: absolute;
+  top: 50px;
+  right: 30px;
+}
+
+@media only screen and (max-width: 1279px) {
+  .nav-menu {
+    padding: 0;
+  }
+
+  .nav-menu .logo {
+    z-index: 1;
+    width: 100px;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+
+  .nav-menu .logo img {
+    width: 100%;
+  }
+
+  .nav-menu .nav-links {
+    width: 100%;
+    height: 100vh;
+    background: #000000f2;
+    flex-direction: column;
+    justify-content: center;
+    transition: all .1s;
+    position: absolute;
+    left: -100%;
+  }
+
+  .nav-menu .nav-links li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
+
+  .nav-menu .nav-links li:nth-child(1) {
+    margin-top: 150px;
+  }
+
+  .nav-menu .nav-links.show {
+    left: 0;
+  }
+
+  .nav-menu .checkbtn {
+    display: block;
+  }
+}
+
+header {
+  height: 50vh;
+  width: 100%;
+  background-image: linear-gradient(#0006, #0006), url("../sobreNosotros.2ad0fcf2.jpg");
+  background-position: bottom;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  margin-top: 170px;
+  display: flex;
+}
+
+header .titulo {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+header .titulo h1 {
+  letter-spacing: 5px;
+  color: #fff;
+  text-transform: uppercase;
+  word-spacing: .25em;
+  padding: 10px;
+  font-size: 5vmin;
+  font-style: italic;
+}
+
+@media only screen and (min-width: 2000px) {
+  header {
+    height: 30vh;
+    margin-top: 300px;
+  }
+}
+
+.presentacion, .valores {
+  margin-top: 50px auto 0px auto;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  display: flex;
+}
+
+.presentacion .texto, .valores .texto {
+  width: 90%;
+  text-align: center;
+}
+
+.presentacion .texto p, .valores .texto p {
+  letter-spacing: 1px;
+  margin: 50px;
+  line-height: 30px;
+}
+
+.presentacion .imagen, .valores .imagen {
+  width: 50%;
+}
+
+.presentacion .imagen img, .valores .imagen img {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .presentacion, .valores {
+    flex-direction: column;
+  }
+
+  .presentacion .texto, .valores .texto {
+    order: -1;
+  }
+}
+
+h2 {
+  text-align: center;
+}
+
+.empleados {
+  margin: auto;
+  padding: 10px;
+  display: flex;
+}
+
+.empleados .caja {
+  width: 100%;
+  height: 400px;
+  cursor: default;
+  background-color: #fff;
+  border: 1px solid #000;
+  flex-direction: column;
+  margin: 20px;
+  transition: all .4s;
+  display: flex;
+}
+
+.empleados .caja img {
+  width: 100%;
+}
+
+.empleados .caja .contenido {
+  text-align: center;
+  padding: 15px;
+}
+
+.empleados .caja .contenido p {
+  letter-spacing: 1px;
+  padding: 10px;
+}
+
+.empleados .caja .contenido a {
+  color: #000;
+  letter-spacing: 1px;
+  border: 1px solid #000;
+  padding: 10px;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 767px) {
+  .empleados {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .empleados .caja {
+    width: 70%;
+    height: 95%;
+  }
+
+  .empleados .caja a {
+    font-size: 3.88889vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .empleados {
+    margin-top: 100px;
+  }
+}
+
+.pie {
+  color: #fff;
+  height: 250px;
+  text-align: center;
+  background-color: #000;
+  justify-content: space-evenly;
+  align-items: center;
+  display: flex;
+}
+
+.pie h1 {
+  letter-spacing: 6px;
+}
+
+.pie ul {
+  flex-direction: column;
+  padding: 15px;
+  display: flex;
+}
+
+.pie ul li {
+  line-height: 25px;
+  list-style: none;
+}
+
+.pie ul li a {
+  color: #fff;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+
+.pie #redes ul {
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+@media only screen and (max-width: 767px) {
+  .pie {
+    height: 1000px;
+    flex-direction: column;
+  }
+
+  .pie #redes {
+    order: -1;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .pie {
+    margin-top: 300px;
+  }
+}
+
+/*# sourceMappingURL=sobreNosotros.a535ce71.css.map */
