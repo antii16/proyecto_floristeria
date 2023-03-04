@@ -1,0 +1,72 @@
+
+header {
+    height: 100vh;
+    background-image: $gradiente, url(../img/fondoIndex.jpg);
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include movil-max(movil-max) {
+        height: 120vh;
+    }
+
+    @include ordenador-max(tablet-min, portatil-L)  {
+        height: 100vh;
+        background-image: $gradiente, url(../img/fondoIndex_1000.jpg);
+    }
+    @include ordenador-4k(ordenador-4k) {
+        height: 70vh;
+    }
+
+    .header-contenido {
+        color: $blanco;
+        text-align: center;
+        width: 50%;
+        margin-top: 100px;
+
+        @include movil-max(movil-max) {
+            width: 80%;
+            margin-top: 150px;    
+        }
+        
+        p {
+            padding: 20px;
+            line-height: 50px;
+            color: $blanco;
+            letter-spacing: $espaciadoPA;
+         
+            @include movil-max(movil-max) {
+                font-size: $letraPequeña;       
+            }
+            @include ordenador-max(tablet-min, portatil-L) {
+                font-size: $letraMediana;      
+            }
+        }
+
+        h1 {
+            text-transform: uppercase;
+            letter-spacing: $espaciadoH1;
+            word-spacing: 0.25em;
+            padding: 10px;
+        }
+        
+
+        a {
+            color: $blanco;
+            letter-spacing: $espaciadoPA;
+            border: $bordeBlanco;
+            padding: 10px;
+            @include movil-max(movil-max) {
+                font-size: $letraPequeña;      
+            }
+            @include ordenador-max(tablet-min, portatil-L) {
+                font-size: $letraMediana;
+           
+            }
+            
+        }
+    }   
+}

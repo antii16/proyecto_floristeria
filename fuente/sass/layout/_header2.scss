@@ -1,0 +1,81 @@
+/*Este header se utiliza en la mayoría de páginas, excepto en el index, ver Producto y ver Blog*/
+/*IMAGENES DE PRESENTACION DE CADA PAGINA*/
+.blog {
+    background-image: $gradiente, url(../img/fondoBlog.jpg);
+    @include ordenador-4k(ordenador-4k) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/fondoBlog_1000.jpg);
+    }
+}
+.decoracionFloral {
+    background-image: $gradiente, url(../img/floral3.jpg);
+    @include ordenador-4k(ordenador-4k) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/floral3_1000.jpg);
+    }
+}
+
+.ramosycoronas {
+    background-image: $gradiente, url(../img/ramo.jpg);
+    @include ordenador-4k(ordenador-4k) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/ramo_1000.jpg);
+    }
+}
+
+.regalos {
+    background-image:$gradiente, url(../img/regalo.jpg);
+    @include ordenador-4k(ordenador-4k) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/regalo_1000.jpg);
+    }
+}
+
+.sobreNosotros {
+    background-image:$gradiente, url(../img/sobreNosotros.jpg);
+    @include ordenador-4k(ordenador-4k) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/sobreNosotros_1000.jpg);
+    }
+}
+
+.tituloContacto {
+    background-image: $gradiente, url(../img/imagenContacto.jpg);
+    @include ordenador-4k(ordenador-4k) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.40), rgba(0, 0, 0, 0.40)), url(../img/imagenContacto_1000.jpg);
+    }
+}
+
+/*HEADER*/
+header {
+    margin-top: 170px;
+    height: 50vh;
+    background-position: bottom;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @include ordenador-4k(ordenador-4k) {
+        height: 500px;
+    }
+
+    .titulo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        h1 {
+            font-size:$letraTitulo;
+            letter-spacing: $espaciadoH1;
+            padding: 10px;
+            font-style: italic;
+            color: $blanco;
+            text-transform: uppercase;
+            word-spacing: 0.25em;
+        }
+
+        p{
+            color: $blanco;
+            letter-spacing: $espaciadoPA;
+        }
+    }
+
+}

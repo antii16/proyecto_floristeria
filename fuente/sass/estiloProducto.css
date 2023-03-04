@@ -1,12 +1,11 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-/*MEDIA QUERIES*/
-a {
+.navbar-nav li a {
   text-decoration: none;
-}
-
-nav {
   letter-spacing: 2px;
+}
+.navbar-nav li:nth-child(5):hover {
+  transform: scale(1.15);
 }
 
 main a {

@@ -1,0 +1,49 @@
+/*Es el main que se utiliza en todas las páginas principales, excepto en contacto e index*/
+main {
+    .filter {
+        margin-left: 5%;
+        margin-top: 50px;
+    }
+
+    .lista_decoraciones {
+        display: grid;
+        padding: 10px;
+        grid-template-columns: 1fr 1fr 1fr;
+
+        @include movil-max(movil-max) {
+            grid-template-columns: 1fr;
+        }
+
+        @include grid-lista(grid-tablet, movil-max){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .contenido-seccion {
+            width: 90%;
+            margin: 20px;
+            overflow: hidden;
+            background-color: $blanco;
+            cursor: default;
+            border: $bordeNegro;
+            transition: all 400ms ease;
+
+            img {
+                width: 100%;
+            }
+
+            .contenido {
+                text-align: center;
+                padding: 15px;
+                a {
+                    border: $bordeNegro;
+                    padding: 5px;
+                    color: $negro;
+                }
+                p {
+                    padding: 20px;
+                    letter-spacing: $espaciadoPA;
+                }
+            }
+        }   
+    }
+}

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="../sass/estiloSecundario.css">
+    <link type="text/css" rel="stylesheet" href="../sass/estiloSecundario.scss">
     <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
@@ -23,7 +23,7 @@
 </head>
 
 <body>
-
+    <!--MENÚ DE NAVEGACIÓN-->
     <nav class="nav-menu">
         <div class="logo"> 
             <a href="../index.html"><img src="../img/logoA.png" alt="Logotipo"></a>
@@ -31,10 +31,10 @@
 
         <ul class="nav-links">
             <li><a href="decoracionFloral.html">Decoración floral</a></li>
-            <li><a href="#">Ramos y Coronas</a></li>
-            <li><a href="#">Regalos</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Escríbenos</a></li>
+            <li><a href="ramosycoronas.html">Ramos y Coronas</a></li>
+            <li><a href="regalos.html">Regalos</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="contacto.html">Escríbenos</a></li>
         </ul>
 
         <label class="checkbtn">
@@ -42,157 +42,113 @@
         </label>
     </nav>
 
-    <header>
-    
+    <!--HEADER-->
+    <header class="decoracionFloral">
         <div class="titulo">
-           
             <h1>Decoración Floral</h1> 
-            
         </div>
-    
     </header>
      
-    
+    <!--MAIN-->
     <main>
         <section class="filter">
             <form action="#">
                 <label for="filtro">Filtro:  </label>
                 <select name="categorias">
-    
                     <option value="boda">Boda</option>
                     <option value="cumpleaños">Cumpleaños</option>
                     <option value="funeral">Funeral</option>
                     <option value="evento">Evento</option>
                 </select>
             </form>
-    
         </section>
         
-        
         <section class="lista_decoraciones">
-
             <div class="contenido-seccion">
                 <picture>
                     <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral1_700.jpg" />
                     <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral1_1000.jpg" />
-                    
                     <img src="../img/floral1.jpg" alt="Decoración Floral">
                 </picture>
-               
-               
                 <div class="contenido">
-                    <p>Subtitle</p>
+                    <p>Boda en la playa</p>
                     <a href="./verProducto.html">Ver más</a>
                 </div>
-   
             </div>
 
             <div class="contenido-seccion">
-                
                 <picture>
                     <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral2_700.jpg" />
                     <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral2_1000.jpg" />
-                    
                     <img src="../img/floral2.jpg" alt="Decoración Floral">
                 </picture>
-               
-
                 <div class="contenido">
                     <p>Subtitle</p>
                     <a href="#">Ver más</a>
-                </div>
-
-               
-                
+                </div>  
             </div>
+
             <div class="contenido-seccion">
-                
                 <picture>
                     <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral3_700.jpg" />
                     <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral3_1000.jpg" />
-                    
                     <img src="../img/floral3.jpg" alt="Decoración Floral">
                 </picture>
-               
-
                 <div class="contenido">
-                    
                     <p>Subtitle</p>
                     <a href="#">Ver más</a>
-                </div>
-
-               
-                
+                </div> 
             </div>
+
             <div class="contenido-seccion">
-                
                 <picture>
                     <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral4_700.jpg" />
                     <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral4_1000.jpg" />
-                    
                     <img src="../img/floral4.jpg" alt="Decoración Floral">
                 </picture>
-               
-
                 <div class="contenido">
                     <p>Subtitle</p>
                     <a href="#">Ver más</a>
                 </div>
-
-               
-                
             </div>
+
             <div class="contenido-seccion">
-                
                 <picture>
                     <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral5_700.jpg" />
                     <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral5_1000.jpg" />
-                    
                     <img src="../img/floral5.jpg" alt="Decoración Floral">
                 </picture>
-               
-
                 <div class="contenido">
                     <p>Subtitle</p>
                     <a href="#">Ver más</a>
-                </div>
-
-               
-                
+                </div>  
             </div>
+
             <div class="contenido-seccion">
-                
                 <picture>
                     <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/floral6_700.jpg" />
                     <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/floral6_1000.jpg" />
-                    
                     <img src="../img/floral6.jpg" alt="Decoración Floral">
                 </picture>
-               
-
-                <div class="contenido">
+               <div class="contenido">
                     <p>Subtitle</p>
                     <a href="#">Ver más</a>
-                </div>
-
-               
-                
+                </div>  
             </div>
         </section>
-
-
     </main>
 
+    <!--PAGINACION-->
     <nav class="paginacion">
         <ul id="pagination">
             <li><a href="#">«</a></li>
             <li><a href="#">1</a></li>
             <li><a href="#">2</a></li>
-            <li><a href="#">»</a></li>
-           
+            <li><a href="#">»</a></li>   
         </ul>
     </nav>
 
+    <!--FOOTER-->
     <footer class="pie">
         <div id="contacto">
             <h3>Contacto</h3>
@@ -206,19 +162,18 @@
         <div id="redes">
             <h1>JAZMIN</h1>
             <ul>
-                <li><a href="https://www.instagram.com/" class="fa fa-instagram"></a></li>
-                <li><a href="https://es-es.facebook.com/" class="fa fa-facebook"></a></li>
-                <li><a href="https://twitter.com/?lang=es" class="fa fa-twitter"></a></li>
+                <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+                <li><a href="https://es-es.facebook.com/" class="fab fa-facebook"></a></li>
+                <li><a href="https://twitter.com/?lang=es" class="fab fa-twitter"></a></li>
             </ul>
-
-            <p>Copyright &copy; 2022</p>
-              
+            <p>Copyright &copy; 2022</p> 
         </div>
+
         <div id="informacion">
-            <h3>Informacion</h3>
+            <h3>Información</h3>
             <ul>
-                <li><a href="#">Sobre nosotros</a></li>
-                <li><a href="#">Aviso ligal</a></li>
+                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="#">Aviso legal</a></li>
                 <li><a href="#">Política de cookies</a></li>
                 <li><a href="#">Política de privacidad</a></li>
             </ul>

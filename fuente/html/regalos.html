@@ -4,18 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link type="text/css" rel="stylesheet" href="/css/estilo.css">
-    <title>Regalos</title>
+    <link type="text/css" rel="stylesheet" href="../sass/estiloSecundario.scss">
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.checkbtn').click(function() {
+                $('.nav-links').toggleClass('show');
+            })
+
+        })
+       
+    </script>
+    <title>Jazmin</title>
 </head>
+
 <body>
-    <nav>
-        <ul>
-            <li><a href="/decoracion_Floral/decoracionFloral.html">Decoración floral</a></li>
-            <li><a href="/ramosycoronas/ramosycoronas.html">Ramos y Coronas</a></li>
-            <li><a href="./regalos.html">Regalos</a></li>
-            <li><a href="/blogs/blogs.html">Blog</a></li>
-            <li><a href="/contacto/contacto.html">Escríbenos</a></li>
+
+    <nav class="nav-menu">
+        <div class="logo"> 
+            <a href="../index.html"><img src="../img/logoA.png" alt="Logotipo"></a>
+        </div>
+
+        <ul class="nav-links">
+            <li><a href="decoracionFloral.html">Decoración floral</a></li>
+            <li><a href="ramosycoronas.html">Ramos y Coronas</a></li>
+            <li><a href="regalos.html">Regalos</a></li>
+            <li><a href="blogs.html">Blog</a></li>
+            <li><a href="contacto.html">Escríbenos</a></li>
+        </ul>
+
+        <label class="checkbtn">
+            <i class="fa fa-bars"></i>
+        </label>
+    </nav>
+
+    <header class="regalos">
+        <div class="titulo">    
+            <h1>Regalos</h1>      
+        </div>
+    </header>
+     
+    <main>
+        <section class="filter">
+            <form action="#">
+                <label for="filtro">Filtro:  </label>
+                <select name="categorias">
+                    <option value="boda">Boda</option>
+                    <option value="cumpleaños">Cumpleaños</option>
+                    <option value="funeral">Funeral</option>
+                    <option value="evento">Evento</option>
+                </select>
+            </form>
+        </section>
+        
+        
+        <section class="lista_decoraciones">
+            <div class="contenido-seccion">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/regalo1_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/regalo1_1000.jpg" />
+                    <img src="../img/regalo1.jpg" alt="Regalo">
+                </picture>
+                <div class="contenido">
+                    <p>Subtitle</p>
+                    <a href="./verProducto.html">Ver más</a>
+                </div>
+            </div>
+
+            <div class="contenido-seccion">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/regalo2_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/regalo2_1000.jpg" />
+                    <img src="../img/regalo2.jpg" alt="Regalo">
+                </picture>
+                <div class="contenido">
+                    <p>Subtitle</p>
+                    <a href="#">Ver más</a>
+                </div> 
+            </div>
+
+            <div class="contenido-seccion">
+                <picture>
+                    <source type="image/jpg"  media="(max-width: 1799px)" srcset="../img/regalo_700.jpg" />
+                    <source type="image/jpg"  media="(min-width: 1800px)" srcset="../img/regalo_1000.jpg" />
+                    <img src="../img/regalo.jpg" alt="Regalo">
+                </picture>
+                <div class="contenido">
+                    <p>Subtitle</p>
+                    <a href="#">Ver más</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="paginacion">
+        <ul id="pagination">
+            <li><a href="#">«</a></li>
+            <li><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">»</a></li>
         </ul>
     </nav>
+
+    <footer class="pie">
+        <div id="contacto">
+            <h3>Contacto</h3>
+            <ul>
+                <li>Dirección: 831 Elm St, New York</li>
+                <li>Telefono: 666-888-999</li>
+                <li>E-mail: florjazmin@gmail.com</li>
+            </ul>
+        </div>
+
+        <div id="redes">
+            <h1>JAZMIN</h1>
+            <ul>
+                <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+                <li><a href="https://es-es.facebook.com/" class="fab fa-facebook"></a></li>
+                <li><a href="https://twitter.com/?lang=es" class="fab fa-twitter"></a></li>
+            </ul>
+            <p>Copyright &copy; 2022</p>     
+        </div>
+
+        <div id="informacion">
+            <h3>Información</h3>
+            <ul>
+                <li><a href="sobreNosotros.html">Sobre nosotros</a></li>
+                <li><a href="#">Aviso legal</a></li>
+                <li><a href="#">Política de cookies</a></li>
+                <li><a href="#">Política de privacidad</a></li>
+            </ul>
+        </div>
+    </footer>
+    
 </body>
 </html>

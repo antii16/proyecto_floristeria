@@ -1,6 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
-/*VARIABLES*/
-/*MEDIA QUERIES*/
+/*COLORES */
 * {
   margin: 0;
   padding: 0;
@@ -13,6 +13,12 @@ body {
   width: 100%;
   overflow-x: hidden;
 }
+@media only screen and (min-width: 2000px) {
+  body {
+    width: 65%;
+    margin: auto;
+  }
+}
 
 .nav-menu {
   position: absolute;
@@ -22,6 +28,7 @@ body {
   width: 100%;
   padding: 20px;
   justify-content: space-between;
+  /*Es el menú responsive. Utilizado hasta una resolución de 1279px*/
 }
 .nav-menu .logo img {
   width: 15vmin;
@@ -57,10 +64,7 @@ body {
   color: black;
 }
 .nav-menu .nav-links li:nth-child(5):hover {
-  background-color: #474f59;
-}
-.nav-menu .nav-links li:nth-child(5):hover a {
-  color: #fff;
+  transform: scale(1.15);
 }
 .nav-menu .checkbtn {
   color: #474f59;
@@ -109,11 +113,39 @@ body {
     display: block;
   }
 }
+@media only screen and (min-width: 2000px) {
+  .nav-menu {
+    width: 80%;
+    left: 0;
+  }
+  .nav-menu .logo {
+    margin-left: 500px;
+    width: 100px;
+  }
+  .nav-menu .logo img {
+    width: 100%;
+  }
+}
+
+.blog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fondoBlog.jpg);
+}
+
+.decoracionFloral {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/floral2.jpg);
+}
+
+.ramosycoronas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/ramo.jpg);
+}
+
+.regalos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/regalo.jpg);
+}
 
 header {
   margin-top: 170px;
   height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/floral2.jpg);
   background-position: bottom;
   background-size: cover;
   width: 100%;
@@ -125,20 +157,25 @@ header .titulo {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 header .titulo h1 {
   font-size: 5vmin;
   letter-spacing: 5px;
   padding: 10px;
   font-style: italic;
-  color: white;
+  color: #fff;
   text-transform: uppercase;
   word-spacing: 0.25em;
 }
+header .titulo p {
+  padding: 10px;
+  color: #fff;
+  font-size: 20px;
+}
 @media only screen and (min-width: 2000px) {
   header {
-    margin-top: 300px;
-    height: 30vh;
+    height: 500px;
   }
 }
 
