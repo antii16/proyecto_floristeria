@@ -1,17 +1,23 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 /*COLORES */
+/*TIPOGRAFÍA*/
+/*ANCHOS Y ALTOS*/
+/*BORDES*/
 * {
   margin: 0;
   padding: 0;
   font-family: "Montserrat", sans-serif;
   box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
 }
 
 html,
 body {
   width: 100%;
   overflow-x: hidden;
+  /*Resolución para resoluciones superiores a 2000px*/
 }
 @media only screen and (min-width: 2000px) {
   html,
@@ -21,6 +27,9 @@ body {
   }
 }
 
+/*El nav2 se utiliza en todas las páginas excepto
+en el index
+*/
 .nav-menu {
   position: absolute;
   display: flex;
@@ -30,26 +39,77 @@ body {
   padding: 20px;
   justify-content: space-between;
   /*Es el menú responsive. Utilizado hasta una resolución de 1279px*/
+  /*Resolución para resoluciones superiores a 2000px*/
+}
+@media only screen and (max-width: 1279px) {
+  .nav-menu {
+    padding: 0;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .nav-menu {
+    width: 80%;
+  }
+}
+.nav-menu .logo {
+  width: 100px;
+  /*Es el menú responsive. Utilizado hasta una resolución de 1279px*/
+  /*Resolución para resoluciones superiores a 2000px*/
+}
+@media only screen and (max-width: 1279px) {
+  .nav-menu .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    z-index: 1;
+    width: 100px;
+  }
+}
+@media only screen and (min-width: 2000px) {
+  .nav-menu .logo {
+    margin-left: 500px;
+  }
 }
 .nav-menu .logo img {
-  width: 15vmin;
+  width: 100%;
 }
 .nav-menu .nav-links {
   display: flex;
   align-items: center;
+  /*Es el menú responsive. Utilizado hasta una resolución de 1279px*/
+}
+@media only screen and (max-width: 1279px) {
+  .nav-menu .nav-links {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 110vh;
+    background: #000000;
+    left: -100%;
+    transition: all 0.1s;
+  }
+  .nav-menu .nav-links.show {
+    left: 0;
+  }
 }
 .nav-menu .nav-links li {
   margin: 0 30px;
   padding: 5px;
   background-color: #474f59;
   border-radius: 6px;
-  list-style: none;
+  /*Es el menú responsive. Utilizado hasta una resolución de 1279px*/
+}
+@media only screen and (max-width: 1279px) {
+  .nav-menu .nav-links li {
+    margin: 10px 0;
+    line-height: 30px;
+  }
 }
 .nav-menu .nav-links li a {
   padding: 20px;
   color: #fff;
-  letter-spacing: 2px;
-  text-decoration: none;
+  letter-spacing: 1px;
 }
 .nav-menu .nav-links li:hover {
   background-color: #d9c5c1;
@@ -57,6 +117,7 @@ body {
 }
 .nav-menu .nav-links li:hover a {
   color: #000000;
+  font-weight: bold;
 }
 .nav-menu .nav-links li:nth-child(5) {
   background-color: #d9c5c1;
@@ -76,132 +137,157 @@ body {
   position: absolute;
   cursor: pointer;
   display: none;
+  /*Es el menú responsive. Utilizado hasta una resolución de 1279px*/
 }
 @media only screen and (max-width: 1279px) {
-  .nav-menu {
-    padding: 0;
-  }
-  .nav-menu .logo {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    z-index: 1;
-    width: 100px;
-  }
-  .nav-menu .logo img {
-    width: 100%;
-  }
-  .nav-menu .nav-links {
-    position: absolute;
-    flex-direction: column;
-    width: 100%;
-    height: 100vh;
-    background: #000000;
-    left: -100%;
-    transition: all 0.1s;
-    justify-content: center;
-  }
-  .nav-menu .nav-links li {
-    margin: 10px 0;
-    line-height: 30px;
-  }
-  .nav-menu .nav-links li:nth-child(1) {
-    margin-top: 150px;
-  }
-  .nav-menu .nav-links.show {
-    left: 0;
-  }
   .nav-menu .checkbtn {
     display: block;
   }
 }
+
+/*Este header se utiliza en la mayoría de páginas, excepto en el index, ver Producto y ver Blog*/
+/*IMAGENES DE PRESENTACION DE CADA PAGINA*/
+.blog {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fondoBlog.jpg);
+  /*Resolución para resoluciones superiores a 2000px*/
+}
 @media only screen and (min-width: 2000px) {
-  .nav-menu {
-    width: 80%;
-    left: 0;
-  }
-  .nav-menu .logo {
-    margin-left: 500px;
-    width: 100px;
-  }
-  .nav-menu .logo img {
-    width: 100%;
+  .blog {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/fondoBlog_1000.jpg);
   }
 }
 
+.decoracionFloral {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/floral3.jpg);
+  /*Resolución para resoluciones superiores a 2000px*/
+}
+@media only screen and (min-width: 2000px) {
+  .decoracionFloral {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/floral3_1000.jpg);
+  }
+}
+
+.ramosycoronas {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/ramo.jpg);
+  /*Resolución para resoluciones superiores a 2000px*/
+}
+@media only screen and (min-width: 2000px) {
+  .ramosycoronas {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/ramo_1000.jpg);
+  }
+}
+
+.regalos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/regalo.jpg);
+  /*Resolución para resoluciones superiores a 2000px*/
+}
+@media only screen and (min-width: 2000px) {
+  .regalos {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/regalo_1000.jpg);
+  }
+}
+
+.sobreNosotros {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/sobreNosotros.jpg);
+  /*Resolución para resoluciones superiores a 2000px*/
+}
+@media only screen and (min-width: 2000px) {
+  .sobreNosotros {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/sobreNosotros_1000.jpg);
+  }
+}
+
+.tituloContacto {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/imagenContacto.jpg);
+  /*Resolución para resoluciones superiores a 2000px*/
+}
+@media only screen and (min-width: 2000px) {
+  .tituloContacto {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/imagenContacto_1000.jpg);
+  }
+}
+
+/*HEADER*/
 header {
   margin-top: 170px;
   height: 50vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/sobreNosotros.jpg);
   background-position: bottom;
   background-size: cover;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-header .titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-header .titulo h1 {
-  font-size: 5vmin;
-  letter-spacing: 5px;
-  padding: 10px;
-  font-style: italic;
-  color: white;
-  text-transform: uppercase;
-  word-spacing: 0.25em;
+  /*Resolución para resoluciones superiores a 2000px*/
 }
 @media only screen and (min-width: 2000px) {
   header {
     height: 500px;
   }
 }
+header .titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+header .titulo h1 {
+  font-size: 4vmin;
+  letter-spacing: 5px;
+  padding: 10px;
+  font-style: italic;
+  color: #fff;
+  text-transform: uppercase;
+  word-spacing: 0.25em;
+}
+header .titulo p {
+  color: #fff;
+  letter-spacing: 1px;
+}
 
-.presentacion, .valores {
+/*Main del apartado Sobre Nosotros*/
+main .presentacion, main .valores {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 50px auto 0px auto;
   padding: 50px;
+  /*Es la resolución maxima para un movil */
 }
-.presentacion .texto, .valores .texto {
+main .presentacion .texto, main .valores .texto {
   width: 90%;
   text-align: center;
 }
-.presentacion .texto p, .valores .texto p {
+main .presentacion .texto p, main .valores .texto p {
   margin: 50px;
   letter-spacing: 1px;
   line-height: 30px;
 }
-.presentacion .imagen, .valores .imagen {
+main .presentacion .imagen, main .valores .imagen {
   width: 50%;
 }
-.presentacion .imagen img, .valores .imagen img {
+main .presentacion .imagen img, main .valores .imagen img {
   width: 100%;
 }
 @media only screen and (max-width: 768px) {
-  .presentacion, .valores {
+  main .presentacion, main .valores {
     flex-direction: column;
   }
-  .presentacion .texto, .valores .texto {
+  main .presentacion .texto, main .valores .texto {
     /*El contenedor de redes pasa a primer lugar*/
     order: -1;
   }
 }
-
-h2 {
+main h2 {
   text-align: center;
+  line-height: 3px;
 }
-
-.empleados {
+main .empleados {
   display: flex;
   margin: auto;
   padding: 10px;
+  /*Es la resolución maxima para un movil */
 }
-.empleados .caja {
+main .empleados .caja {
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -209,29 +295,28 @@ h2 {
   margin: 20px;
   background-color: #fff;
   cursor: default;
-  border: 1px black solid;
+  border: 1px rgb(0, 0, 0) solid;
   transition: all 400ms ease;
 }
-.empleados .caja img {
+main .empleados .caja img {
   width: 100%;
 }
-.empleados .caja .contenido {
+main .empleados .caja .contenido {
   text-align: center;
   padding: 15px;
 }
-.empleados .caja .contenido p {
+main .empleados .caja .contenido p {
   padding: 10px;
   letter-spacing: 1px;
 }
-.empleados .caja .contenido a {
+main .empleados .caja .contenido a {
   padding: 10px;
-  text-decoration: none;
-  color: black;
+  color: #000000;
   letter-spacing: 1px;
-  border: 1px black solid;
+  border: 1px rgb(0, 0, 0) solid;
 }
 @media only screen and (max-width: 767px) {
-  .empleados {
+  main .empleados {
     width: 100%;
     flex-direction: column;
     height: 100%;
@@ -239,26 +324,30 @@ h2 {
     align-items: center;
     text-align: center;
   }
-  .empleados .caja {
+  main .empleados .caja {
     width: 70%;
     height: 95%;
-  }
-  .empleados .caja a {
-    font-size: 3.88888889vw;
   }
 }
 
 .pie {
   background-color: #000000;
+  height: 250px;
   color: #fff;
   display: flex;
-  height: 250px;
   justify-content: space-evenly;
   align-items: center;
   text-align: center;
+  /*Es la resolución maxima para un movil */
+}
+@media only screen and (max-width: 767px) {
+  .pie {
+    flex-direction: column;
+    height: 1000px;
+  }
 }
 .pie h1 {
-  letter-spacing: 6px;
+  letter-spacing: 5px;
 }
 .pie ul {
   padding: 15px;
@@ -266,23 +355,20 @@ h2 {
   flex-direction: column;
 }
 .pie ul li {
-  list-style: none;
   line-height: 25px;
 }
 .pie ul li a {
-  text-decoration: none;
   color: #fff;
-  letter-spacing: 1px;
+}
+.pie #redes {
+  /*Es la resolución maxima para un movil */
 }
 .pie #redes ul {
+  color: #fff;
   justify-content: space-evenly;
   flex-direction: row;
 }
 @media only screen and (max-width: 767px) {
-  .pie {
-    flex-direction: column;
-    height: 1000px;
-  }
   .pie #redes {
     /*El contenedor de redes pasa a primer lugar*/
     order: -1;
